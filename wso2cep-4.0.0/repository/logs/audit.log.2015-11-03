@@ -1,0 +1,4 @@
+[2015-11-03 10:27:27,321]  INFO {AUDIT_LOG}-  'admin@carbon.super [-1234]' logged in at [2015-11-03 10:27:27,319+0530] 
+[2015-11-03 16:29:03,362]  INFO {AUDIT_LOG}-  'admin@carbon.super [-1234]' logged in at [2015-11-03 16:29:03,360+0530] 
+[2015-11-03 17:37:32,270]  INFO {AUDIT_LOG}-  'admin@carbon.super [-1234]' logged in at [2015-11-03 17:37:32,269+0530] 
+[2015-11-03 17:58:52,286]  INFO {AUDIT_LOG}-  'admin@carbon.super [-1234]' logged in at [2015-11-03 17:58:52,284+0530] 

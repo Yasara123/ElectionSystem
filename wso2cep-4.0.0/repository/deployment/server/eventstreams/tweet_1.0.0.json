@@ -1,0 +1,40 @@
+{
+  "name": "tweet",
+  "version": "1.0.0",
+  "nickName": "",
+  "description": "",
+  "payloadData": [
+    {
+      "name": "text",
+      "type": "STRING"
+    },
+    {
+      "name": "createdAt",
+      "type": "STRING"
+    },
+    {
+      "name": "country",
+      "type": "STRING"
+    },
+    {
+      "name": "countryCode",
+      "type": "STRING"
+    },
+    {
+      "name": "location",
+      "type": "STRING"
+    },
+    {
+      "name": "hashTags",
+      "type": "STRING"
+    },
+    {
+      "name": "latitude",
+      "type": "STRING"
+    },
+    {
+      "name": "longitude",
+      "type": "STRING"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventReceiver name="text" statistics="disable" trace="disable" xmlns="http://wso2.org/carbon/eventreceiver">
+    <from eventAdapterType="http">
+        <property name="transports">http</property>
+    </from>
+    <mapping customMapping="enable" type="xml">
+        <property>
+            <from xpath="/jsonObject/text"/>
+            <to name="text" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/createdAt"/>
+            <to name="createdAt" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/country"/>
+            <to name="country" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/countryCode"/>
+            <to name="countryCode" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/location"/>
+            <to name="location" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/hashTags"/>
+            <to name="hashTags" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/latitude"/>
+            <to name="latitude" type="string"/>
+        </property>
+        <property>
+            <from xpath="/jsonObject/longitude "/>
+            <to name="longitude" type="string"/>
+        </property>
+    </mapping>
+    <to streamName="tweet" version="1.0.0"/>
+</eventReceiver>

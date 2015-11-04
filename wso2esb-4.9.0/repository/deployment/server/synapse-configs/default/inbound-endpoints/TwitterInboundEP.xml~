@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inboundEndpoint xmlns="http://ws.apache.org/ns/synapse"
+                 name="TwitterInboundEP"
+                 sequence="reqSequence"
+                 onError="reqErrorSequence"
+                 class="org.wso2.carbon.inbound.twitter.poll.TwitterStreamData"
+                 suspend="false">
+   <parameters>
+      <parameter name="connection.twitter.consumerSecret"> g7gi0N3cowg0NRHbfJ7n5eNX95UC1zmhMfmeOSZwoW1I3tQlqW</parameter>
+      <parameter name="connection.twitter.accessSecret">fGNaxC7CypEcWCVqdPOj4KL3igr9uMzolKXE5HFjpmZnu</parameter>
+      <parameter name="twitter.track">Election2016</parameter>
+      <parameter name="interval">10</parameter>
+      <parameter name="sequential">true</parameter>
+      <parameter name="connection.twitter.consumerKey">grtL62U5XGjIIJfQuc0dpPCDZ</parameter>
+      <parameter name="twitter.operation">filter</parameter>
+      <parameter name="connection.twitter.accessToken">4103337136-Qe8ZG05t3J7JPv3VIbT7Hst5r9S8vpx5LjTEmqD</parameter>
+      <parameter name="coordination">true</parameter>
+   </parameters>
+</inboundEndpoint>

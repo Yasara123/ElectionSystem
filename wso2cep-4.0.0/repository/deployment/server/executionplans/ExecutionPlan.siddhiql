@@ -1,0 +1,16 @@
+/* Enter a unique ExecutionPlan */
+@Plan:name('ExecutionPlan')
+
+/* Enter a unique description for ExecutionPlan */
+-- @Plan:description('ExecutionPlan')
+
+/* define streams/tables and write queries here ... */
+@Import('tweet:1.0.0')
+define stream TwStream (text string, createdAt string, country string, countryCode string, location string, hashTags string, latitude string, longitude string);
+
+@From(eventtable='rdbms', datasource.name='TwDB', table.name='TwTable')
+define table TwTable(id int,  tweet string);
+
+from TwStream
+select 1 as id,text as tweet
+insert into TwTable;

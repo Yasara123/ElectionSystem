@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://ws.apache.org/ns/synapse">
+   <taskManager provider="org.wso2.carbon.mediation.ntask.NTaskTaskManager"/>
+   <!-- You can add any flat sequences, endpoints, etc.. to this synapse.xml file if you do
+    *not* want to keep the artifacts in several files --></definitions>
